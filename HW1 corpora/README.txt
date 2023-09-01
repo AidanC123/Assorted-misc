@@ -1,0 +1,1 @@
+If desired to run, simply run as python Hw1.py with desired text files in local folder (use names "corpora1.txt" and "corpora2.txt"). The two text files given in this folder respectively contain the two corpora used to find the results that can be found in "HW1results.pdf".

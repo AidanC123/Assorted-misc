@@ -1,0 +1,1 @@
+{parta("pennsylvania"), parta("maryland"), parta("new jersey"), partb("delaware"), partb("ohio"), partb("allegheny"), partc("delaware"), partc("arkansas"), partc("colorado"), partc("connecticut"), partc("mississippi"), partc("missouri"), partc("ohio"), partc("tennessee")}

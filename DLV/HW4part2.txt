@@ -1,0 +1,27 @@
+%7. model returned by DLV: {-A}
+B :- A.
+A :- B.
+
+%equivalent to B<=>~(A<=>B)
+~A v ~B.
+~A v B.
+
+%8. Answer; both are knaves (returned {-S, Z}, {-Z})
+
+%~Z :- S.
+%~S :- Z.
+
+%equivalent to (Z/\S)=>~Z and (Z/\S)=>~S
+%~Z v Z.
+%~S v ~Z.
+
+%Either both have to be knights or neither are
+
+%9. Answer; We don't have enough info, either Peggy is the only knight, 
+% or Peggy and Joe are both knights (returned {P, -Z}). 
+%equivalent to (P\/~J)/\(P /\ ~Z)/\((Z=>~J)\/(J=>~Z))
+%P v ~J.
+%P. 
+%~Z.
+%~J :- Z.
+%~Z :- J.

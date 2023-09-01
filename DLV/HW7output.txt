@@ -1,0 +1,3 @@
+{person(barber), person(cutler), person(drake), person(beth), person(dorothy), person(louise), person(allan), person(henry), person(victor), -married(cutler,beth), -married(drake,louise), -son(drake,henry), -son(beth,allan), -son(dorothy,allan), married(cutler,louise), son(louise,victor), married(barber,barber), married(cutler,cutler), married(drake,drake), married(beth,beth), married(dorothy,dorothy), married(louise,louise), married(allan,allan), married(henry,henry), married(victor,victor), son(cutler,allan), married(barber,beth), married(drake,beth)}
+
+(It at least notes Drake and Beth are married)

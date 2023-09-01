@@ -1,0 +1,34 @@
+%Note; this file contains both programs, documentation, and output/returned values
+%Problem 1, Answer; (note; keep getting syntax errors) no, Dan doesn't get his A, empty model was returned. 
+%D: Dan gets an A, H: Henry gets an C, J: John gets an B
+
+%If you get an A then I’ll either have to give Henry a C or John a B
+H v J :- D.
+
+%But if John doesn’t get a B then either you won’t get an A or Henry won’t get a C.
+~D v ~H:- ~J.
+
+%if John gets a B and Henry doesn’t get a C then you won’t get an A
+~D :- J , ~H.
+
+%Now the question is this: if John and Henry received the same final grade, did Dan get his A? 
+D :- ~J , ~H.
+
+%Problem 2, Answer; The first one is Tweedledee, The second one is Tweedledum, no model was returned, answer more or less a guess.
+%Dum: Tweedledum tells truth, Dee: Tweedledee tells truth, O: has Orange, P: has Purple, F: first one, S:second one:
+%Dum tells truth with orange and lies with purple, Dee is the opposite
+Dum :- O.
+~Dum :- P.
+~Dee :- O.
+Dee :- P.
+
+%Dee claims to be first, dum second
+F :- Dee.
+Dee :- F.
+S :- Dum.
+Dum :- S.
+
+%The first person and the second person have the same color card
+(not finished)
+
+

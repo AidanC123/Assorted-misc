@@ -1,0 +1,41 @@
+% 4 meals.
+meals(chili_pork).
+meals(kale_quinoa).
+meals(lemon_salmon).
+meals(garlic_tilapia).
+
+% 4 days.
+days(meals(x), a11th).
+days(meals(x), b14th).
+days(meals(x), c15th).
+days(meals(x), d17th).
+
+% 4 protein counts.
+protein(meals(x), 7).
+protein(meals(x), 8).
+protein(meals(x), 10).
+protein(meals(x), 18).
+
+% 4 calorie counts.
+calorie(meals(x), 380).
+calorie(meals(x), 400).
+calorie(meals(x), 420).
+calorie(meals(x), 440).
+
+%The dish with 7 grams of protein contains 40 more calories than the meal served on May 14th. 
+%protein(meals(x), 7) 
+
+%Of the recipe served on May 11th and the dish with 18 grams of protein, one has 380 calories and the other was the chili pork. 
+
+%The dish with 10 grams of protein was served on May 17th. 
+
+%The garlic tilapia was either the recipe with 7 grams of protein or the dish served on May 11th. 
+
+%The kale quinoa contains 40 more calories than the recipe served on May 14th. 
+%calorie(meals(x), 440) :- meals(kale_quinoa) v calorie(meals(x), 420) :- meals(kale_quinoa).
+
+
+
+Solution(meals(x),C,P,D) :- meals(x), days(meals(x),C), protein(meals(x),P), calorie(meals(x),D).
+
+%Note; No meaningful output, it can't really be explained; question unfinished
